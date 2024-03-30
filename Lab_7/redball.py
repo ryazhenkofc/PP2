@@ -30,12 +30,12 @@ while not done:
         y += speed
     if x < 50:
         x = 50
-    if x > 950:
-        x = 950
+    if x > 1230:
+        x = 1230
     if y < 50:
         y = 50
-    if y > 950:
-        y = 950
+    if y > 974:
+        y = 974
  
     pygame.display.flip()
 pygame.quit
