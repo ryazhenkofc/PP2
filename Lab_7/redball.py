@@ -10,7 +10,7 @@ pygame.display.set_caption("Red ball")
 
 x = 640
 y = 512
-speed = 2
+speed = 4
 
 done = False
 while not done:
@@ -20,13 +20,13 @@ while not done:
     screen.fill(WHITE)
     pygame.draw.circle(screen, RED, [x, y], 25)
     keys = pygame.key.get_pressed()
-    if keys[pygame.K_LEFT]:
+    if keys[pygame.K_a]:
         x -= speed
-    if keys[pygame.K_RIGHT]:
+    if keys[pygame.K_d]:
         x += speed
-    if keys[pygame.K_UP]:
+    if keys[pygame.K_w]:
         y -= speed
-    if keys[pygame.K_DOWN]:
+    if keys[pygame.K_s]:
         y += speed
     if x < 50:
         x = 50

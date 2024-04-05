@@ -22,11 +22,11 @@ while not done:
             done = True
 
     now = datetime.now()
-    hours = now.hour
+    secs = now.second
     minutes = now.minute
 
     left_hand_rotated = pygame.transform.rotate(left_hand_img, minutes * -6)
-    right_hand_rotated = pygame.transform.rotate(right_hand_img, hours * -30 + minutes * -0.5)
+    right_hand_rotated = pygame.transform.rotate(left_hand_img, secs * -6)
 
     screen.blit(clock_img, (0, 0))
     screen.blit(left_hand_rotated, (705 - left_hand_rotated.get_width() // 2, 525 - left_hand_rotated.get_height() // 2))
